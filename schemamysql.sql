@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `schoolsoft`.`schooluser` (
   `reset_password_code_until` DATETIME NOT NULL,
   `created_at` DATETIME NOT NULL,
   `updated_at` DATETIME NOT NULL,
-  `school_id` INT(11) NOT NULL,
+  `school_id` INT(11) DEFAULT NULL,
   `user_id` INT(11) NOT NULL,
   PRIMARY KEY (`user_id`),
   CONSTRAINT `userschoolfk`
